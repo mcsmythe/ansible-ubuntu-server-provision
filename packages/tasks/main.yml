@@ -1,0 +1,19 @@
+---
+- name: Install common software
+  apt: name={{item}} state=present update-cache=yes
+  with_items:
+    - htop
+    - strace
+    - make
+    - gcc
+    - lsof
+    - vim
+    - curl
+    - git
+    - mc
+    - sysstat
+    - iotop
+    - dstat
+    - iptraf
+    - screen
+    - tmux
